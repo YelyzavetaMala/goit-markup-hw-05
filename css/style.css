@@ -504,6 +504,7 @@ button {
 
 
 .backdrop {
+    padding: 80px;
     position: fixed;
     inset: 0;
     background-color: rgba(46, 47, 66, 0.40);
@@ -515,6 +516,8 @@ button {
     pointer-events: none;
 }
 
+
+/* закоментовано */
 .is-open {
     opacity: 1;
     visibility: visible;
@@ -524,7 +527,10 @@ button {
 
 .modal {
     position: relative;
-    width: 408px;
+    width: 100%;
+    max-width: 408px;
+    height: 100%;
+    max-height: 584px;
     border-radius: 4px;
     background: #FCFCFC;
     padding: 72px 24px 24px 24px;
@@ -534,4 +540,112 @@ button {
     position: absolute;
     top: 24px;
     right: 24px;
+}
+
+.modal-title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-bottom: 16px;
+    color: #2E2F42;
+    text-align: center;
+}
+
+.modal-field {
+    margin-bottom: 8px;
+
+}
+
+.modal-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    color: #8E8F99;
+}
+
+.modal-input {
+    width: 100%;
+    border: 1px solid #2E2F4266;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+    padding: 8px 16px;
+    transition: border-color 250ms;
+}
+
+.modal-textarea:focus,
+.modal-input:focus {
+    outline: none;
+    border: 1px solid #4D5AE5;
+}
+
+.modal-input-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms;
+}
+
+.modal-input:focus + .modal-input-icon {
+    fill: #4D5AE5;
+}
+
+.modal-input-add {
+    padding-left: 38px;
+}
+
+.modal-input-wrap {
+    position: relative;
+}
+
+
+.modal-textarea {
+    min-height: 120px;
+    resize: none;
+    width: 100%;
+    border: 1px solid #2E2F4266;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+}
+
+.modal-textarea::placeholder {
+    color: rgba(46, 47, 66, 0.40);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+}
+
+.modal-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 8px;
+}
+
+.modal-checkbox-icon {
+    opacity: 0;
+}
+
+.modal-checkbox-input:checked + .modal-checkbox-check .modal-checkbox-icon {
+    opacity: 1;
+}
+
+.modal-checkbox-check {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    border-radius: 2px;
+}
+
+.modal-checkbox-label {
+    color: #8E8F99;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
 }
