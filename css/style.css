@@ -457,7 +457,6 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 500;
-    margin: 0 auto;
     border-top: none;
     margin-bottom: 16px;
 }
@@ -502,6 +501,59 @@ button {
     align-items: baseline;
 }
 
+.footer-contact {
+    margin-left: 80px;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-label {
+    margin-bottom: 16px;
+}
+
+
+.footer-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background: #2E2F42;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 264px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.footer-input::placeholder {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 0.2;
+    letter-spacing: 0.04em;
+    padding: 8px 16px;
+}
+
+.footer-button {
+    background: #4D5AE5;
+    color: #FFF;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    padding: 8px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: block;
+    min-width: 165px;
+    height: 40px;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 .backdrop {
     padding: 80px;
@@ -517,13 +569,13 @@ button {
 }
 
 
-/* закоментовано */
+/* закоментовано 
 .is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
-
+*/
 
 .modal {
     position: relative;
