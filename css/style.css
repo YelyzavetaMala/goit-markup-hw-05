@@ -753,10 +753,10 @@ button {
 }
 
  .modal-checkbox-input:checked+.modal-checkbox-label>.modal-checkbox-check {
-     background-color: #404BBF;
-     border: none;
-     border-color: #404BBF;
-     fill: #F4F4FD;
+    background-color: #404BBF;
+    border: none;
+    border-color: #404BBF;
+    fill: #F4F4FD;
  }
 
 .modal-checkbox-input:checked + .modal-checkbox-check .modal-checkbox-icon {
