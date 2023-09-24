@@ -755,9 +755,9 @@ button {
 }
 
 .modal-checkbox-input:checked + .modal-checkbox-check {
-    background: #404BBF;
+    background-color: #404bbf;
     border: none;
-    fill: #F4F4FD;;
+    fill: #F4F4FD;
 }
 
 .modal-checkbox-input:checked + .modal-checkbox-check .modal-checkbox-icon {
