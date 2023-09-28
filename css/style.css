@@ -743,7 +743,6 @@ button {
 }
 
 .modal-checkbox-icon {
-    opacity: 0;
     fill: #FFF;
     transition: 0.4s;
 }   
